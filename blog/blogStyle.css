@@ -1,0 +1,130 @@
+:root {
+    --nav-color: rgb(78, 63, 240); /* #673AB7; Computer, maker, Computer Science, solutions, forefront, ideas, Data Science, programmer, code, innovation,  AI, artificial intelligence, technology, smart, empathy, team, developer*/
+    /*    #7B68EE; #191C26;    #673AB7  #4070F4 */
+    --nav-inverse: #7B68EE;
+    --background: #242526; /* #FFF5EE; #37383b;   */
+    --background-second: #37383b;
+    --text: #010718;
+    --text-nav: #E4E9F7;
+    --frame: #939ec0; /*  #37383b;  #B0C4DE;    */
+}
+[data-theme="dark"] {
+    --nav-color: rgb(78, 63, 240); /* #673AB7; Turing, code braker, Computer, vanguard, visionary, Data Science, algorithm, code, innovation, artificial intelligence, technology, node, empathy, nodes, networking, social networking, internet of things, engineering, think outside box, think diferent, mathematicians*/
+    --background: #37383b;
+    --background-second: #37383b;
+    --text: #010718;
+    --text-nav: #E4E9F7;
+    --frame: #939ec0;
+    --about-photo: plum;
+
+    --body-color: #E4E9F7;
+    --side-nav: #010718;
+    --body-h1: #010718;
+}
+[data-theme="light"] {
+    --nav-color: #7B68EE;
+    --background: #37383b;    /*  #37383b;    */
+    --background-second: #B0C4DE;   /* #B0C4DE; */
+    --text: #F5F5F5;            /*  #FFFAFA   #EDE7F6  #CCC  #FFF    */
+    --text-nav: #010718;
+    --about-photo: rgba(137, 43, 226, 0.5);
+
+    --body-color: #18191A;
+    --side-nav: #242526;    
+    --body-h1: #FFF5EE;         /*  #F8F8FF  #F2F2F2 */
+}
+
+body {
+    background-color: var(--background);
+    height: 100vh;
+    color: var(--text-nav);
+}
+.main-navbar {
+    color: var(--text-nav);
+    background-color: var(--nav-color);
+}
+.navbar-brand img {
+    width: 90px;
+    height: 40px;
+}
+.nav-link {
+    color: var(--text-nav)!important;
+}
+.navbar-collapse {
+    flex-grow: unset !important;
+}
+.navbar-collapse .button-signin {
+    background: var(--nav-inverse);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--frame);
+    border-radius: 10px;
+    background: var(--background-second);
+    transition: 1s;
+}
+.navbar-collapse .button-signin:hover {
+    box-shadow: 8px 8px 12px var(--frame);
+    color: var(--text-nav);
+}
+.modal-title {
+    margin-left: 170px;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+}
+.modal-body {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.navbar-collapse button i {
+    font-size: 18px;
+    font-weight: 700;
+}
+/* MODAL   SIGN IN     FORM    */
+#staticBackdrop {
+    padding-top: 50px;
+    padding-left: 790px;
+}
+.modal-header {
+    background: var(--nav-inverse);
+    color: var(--text-nav);
+}
+.modal-body {
+    background: var(--frame);
+}
+.modal-body label {
+    color: var(--text-nav);
+}
+.modal-body i {
+    color: var(--nav-inverse);
+    font-size: 22px;
+    font-weight: 600;
+}
+.modal-footer {
+    background: var(--frame);
+}
+.modal-footer .btn-submit {
+    background: var(--nav-inverse);
+}
+.required::after {
+    content: " * ";
+    color: crimson;
+}
+input [type="text"],
+input [type="password"] {
+    width: 240px;
+    height: 30px;
+    outline: none;
+    border: 0.5px solid var(--background-second);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+/*      end-MODAL   SIGN IN     FORM    */

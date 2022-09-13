@@ -3,12 +3,489 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Gimena Riveros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script src="js/theme.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>GR Full Stack</title>
 </head>
 <body>
-    <h1>Hello, I'm Gimena Riveros</h1>
-    <h3>Full Stack Developer</h3>
+    
+    <!--  INTRO   SECTION 
+    <div class="intro">
+        <img src="img/owl-colors.png" alt="logo-black">
+        <h1 class="logo">
+            <span class="logo-parts">G</span>
+            <span class="logo-parts">I</span>
+            <span class="logo-parts">M</span>
+            <span class="logo-parts">E</span>
+            <span class="logo-parts">C</span>
+            <span class="logo-parts">O</span>
+            <span class="logo-parts">D</span>
+            <span class="logo-parts">E</span>
+        </h1>
+        <p>the solution maker</p>
+    </div>
+ -->
+    <!--  INITIAL   SECTION  -->
+    <section id="init">
+        <div class="container">
+            <header>
+                <div class="container-header">
+                    <h1><a href="#init" class="selection" onclick="selection(this)"> &ltGR&gt </a></h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <!--<li><a href="#init" class="selection" onclick="selection(this)">START</a></li>-->
+                            <li><a href="#aboutme" onclick="selection(this)">ABOUT</a></li>
+                            <li><a href="#container-experience" onclick="selection(this)">E<span>X</span>PERIENCE</a></li>
+                            <li><a href="#portfolio" onclick="selection(this)">PORTFOLIO</a></li>
+                            <li><a href="#contact" onclick="selection(this)">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--  ICONS RESPONSIVE MENU  -->
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--  ICONS SOCIAL NET  -->
+                    <div class="socialnet">
+                        <a href="https://github.com/Gimena-Riveros/"><i class="fa-brands fa-github"></i></a>
+                        <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>   
+                    <!--  THEME  -->
+                    <label class="switch">
+                        <input type="checkbox" id="slider" checked>
+                        <span class="slider"></span>
+                        <!--
+                            <i class="fa-light fa-moon"></i>
+                            <i class="fa-regular fa-sun"></i>
+                        -->
+                    </label>             
+                </div>
+                
+            </header>
+            <div class="presentation">
+                <!--  <p class="welcome">Welcome</p> -->
+                <div><img src="img/PhotoSlack.jpg" alt=""></div>
+                <h5>Hello! I'm <span>Gimena Riveros</span>,</h5>
+                <p>Full Stack Developer Jr</p>
+                <!-- 
+                    <span>&#x2615;</span>
+                    <span>&#128105;&#127995;&#8205;&#128187;</span>
+                    I'll make your product scale to the &infin; infinity<br>
+                    through the web -->
+                <a href="#contact">Let's work together</a>
+            </div>
+        </div>
+    </section>
+
+    <!--   ABOUT   ME   SECTION  -->
+    <section id="aboutme">
+        <div class="container-photo">
+            <img src="img/thinker.png" alt="me">
+        </div>
+        <div class="aboutme">
+            <p class="title-section">About me</p>
+            <h2>I'm <span>Full Stack Developer Jr</span></h2>
+            <h3>with Back End orientation</h3>
+            <p>I use the Django and Spring Boot frameworks but <br>
+                I can adapt to any other without difficulty. <br>
+                I like to be at the forefront of technology, 
+                so I find out about <br>what's new in this techno world on a daily basis.</p>
+            <!-- <p> I'm a Computer Engineering student <br>
+                I'm self-taught in Full Stack Developer <br> 
+                Utilizo los framework Django y Spring Boot pero puedo adaptarme a cualquier 
+                otro sin dificultad. Me gusta estar a la vanguardia en la tecnología, 
+                por lo que diariamente me informo sobre lo nuevo en este mundo tecnológico.           
+            </p>-->
+            <p> My hobbies are <a href="https://cults3d.com/en/users/DesignHouse3D/creations" target="_blank" rel="noopener noreferrer"> 3D printing</a>, 
+                assemble puzzle and write in <a href="blog/myBlog.html" target="_blank" rel="noopener noreferrer">my blog</a><br>
+                I enjoy music, sharing with friends a delicious cup of coffee and <br>
+                long conversations about . . . 
+            </p>
+            <label><a href="pdf-cv/Gime-Riveros.pdf" target="_blank" rel="noopener noreferrer" download="Riveros-CV">Download CV</a></label>
+        </div>
+    </section>
+
+    <!--   SKILLS     SECTION    -->
+    <section id="services">
+        <h3 class="title-section"> MY SKILLS</h3> 
+        <div class="row">
+            <div class="serviceClass">
+                <span class="icon"><i class="fa-brands fa-html5"></i></span>
+                <h4>HTML 5</h4>
+                <hr>
+                <ul class="services-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus <br>
+                    veniam voluptate minus
+                </p>
+            </div>
+
+            <div class="serviceClass">
+                <span class="icon"><i class="fa-brands fa-css3-alt"></i></span>
+                <h4>CSS</h4>
+                <hr>
+                <ul class="services-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus <br>
+                    veniam voluptate minus
+                </p>
+            </div>
+
+            <div class="serviceClass">
+                <span class="icon"><i class='bx bxl-javascript'></i></span>
+                <h4>JS</h4>
+                <hr>
+                <ul class="services-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus <br>
+                    veniam voluptate minus
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="serviceClass">
+                <span class="icon"><i class='bx bxl-postgresql' ></i></span>
+                <h4>PostgreSQL</h4>
+                <hr>
+                <ul class="services-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus <br>
+                    veniam voluptate minus
+                </p>
+            </div>
+
+            <div class="serviceClass">
+                <span class="icon"><i class="fa-brands fa-python"></i></i></span>
+                <h4>Python 3</h4>
+                <hr>
+                <ul class="services-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus <br>
+                    veniam voluptate minus
+                </p>
+            </div>
+
+            <div class="serviceClass">
+                <span class="icon"><i class="fa-brands fa-php"></i></span>
+                <h4>PHP</h4>
+                <hr>
+                <ul class="services-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus <br>
+                    veniam voluptate minus
+                </p>
+            </div>
+            
+        </div>
+        
+        <div class="row">
+            <div class="serviceClass">
+                <span class="icon"><i class="fa-brands fa-bootstrap"></i></span>
+                <h4>Bootstrap</h4>
+                <hr>
+                <ul class="services-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus <br>
+                    veniam voluptate minus
+                </p>
+            </div>
+
+            <div class="serviceClass">
+                <span class="icon"><i class="fa-brands fa-node-js"></i></span>
+                <h4>Node JS</h4>
+                <hr>
+                <ul class="services-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus <br>
+                    veniam voluptate minus
+                </p>
+            </div>
+
+            <div class="serviceClass">
+                <span class="icon"><i class='bx bxl-angular'></i></span>
+                <h4>Angular</h4>
+                <hr>
+                <ul class="services-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus <br>
+                    veniam voluptate minus
+                </p>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!--   EXPERIENCE    SECTION   --> 
+    <section id="container-experience">
+        <div class="top-section">
+            <h1>Education ~ Experience</h1>
+            <p>A continuación una breve historia sobre mi educación y experiencia laboral
+                    en este fascinante mundo de la Computación y que continua en busca de nuevos desafíos que 
+                    me permitan aportar soluciones a los mismos, además de crecer
+                    tanto en lo personal como en lo laboral...                   
+            </p>
+        </div>
+        <div class="timeline">
+            <div class="line"></div>
+            <div class="section-experience">
+                <div class="bead"></div>
+                <div class="content">
+                    <h2>Full Stack Developer Jr</h2>
+                    <p>Gracias a la capacitación realizada a través de 
+                            <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
+                                Argentina Programa</a> he obtenido mi certificación como Full Stack Jr.
+                            En esta capacitación incluye tanto Frontend como Backend, y he desplegado 
+                            los conocimientos adquiridos en este portfolio.
+                    </p>
+                </div>
+            </div>
+            <div class="section-experience">
+                <div class="bead"></div>
+                <div class="content">
+                    <h2>Diplomatura Python3</h2>
+                    <p>Capacitación realizada en <a href="https://sceu.frba.utn.edu.ar/e-learning/detalle/diplomatura/1413/diplomatura-en-python?gclid=Cj0KCQjwmdGYBhDRARIsABmSEeOGSHGbeaqOn3_0wUIx1Wp26WqMLfCvQ3un6--dj3vzivM9WAEg59waAgEMEALw_wcB">UTN</a>
+                            en modo virtual.
+                        La misma consta de tres niveles: inicial - intermedio - avanzado.
+                        Con la carga horaria de 225 hs, donde adquirí conocimientos para 
+                        concretar apps de interfaz gráfica de usuario, patrones de diseño, 
+                        manejo de CRUD con el lenguaje SQL, documentación con Sphinx, 
+                        y manejo de Cliente Servidor.
+                    </p>
+                </div>
+            </div>
+            <div class="section-experience">
+                <div class="bead"></div>
+                <div class="content">
+                    <h2>Cs de la Computación</h2>
+                    <p>En el año 2022 he iniciado la carrera Ciencias de la Computación
+                        en la facultad de Ciencias Naturales y Exactas ~ UBA con gran ilusión
+                        de hacer mi camino en la frontera sin fin que es la ciencia.
+                    </p>
+                </div>
+            </div>
+            <div class="section-experience">
+                <div class="bead"></div>
+                <div class="content">
+                    <h2>DesignHouse3D</h2>
+                    <p>Gracias a lo aprendido de materias cursadas fue que inicié 
+                        mi emprendimiento de impresiones 3D. En él creo 
+                        diseños desde cero o realizo mejoras a diseños pre-existentes, 
+                        para luego imprimirlos listos para ser utilizados. 
+                        Los diseños de mi autoria también se encuentran a la venta online.
+                    </p>
+                </div>
+            </div>
+            <div class="section-experience">
+                <div class="bead"></div>
+                <div class="content">
+                    <h2>Ing en Computación</h2>
+                    <p>Hace unos años, allá por el 2020, comence a transitar la carrera Ingeniería en Computación,
+                        en UNTREF. Actualmente curso mi segundo año de la misma.
+                    </p>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+    <!-- 
+    <div class="container-skills" id="skills">
+        <h3 class="title-section">SKILLS</h3>
+        <div class="skillsClass">
+            <div class="info">
+                <p><span class="list"></span>Html</p>
+                <span class="porcent">80%</span>
+            </div>
+            <div class="bar">
+                <div id="html-bar" class="progress-bar01"></div>
+            </div>
+        </div>
+
+        <div class="skillsClass">
+            <div class="info">
+                <p><span class="list"></span>Css</p>
+                <span class="porcent">63%</span>
+            </div>
+            <div class="bar">
+                <div id="css-bar" class="progress-bar02"></div>
+            </div>
+        </div>
+
+        <div class="skillsClass">
+            <div class="info">
+                <p><span class="list"></span>Javascript</p>
+                <span class="porcent">68%</span>
+            </div>
+            <div class="bar">
+                <div id="js-bar" class="progress-bar03"></div>
+            </div>
+        </div>
+
+        <div class="skillsClass">
+            <div class="info">
+                <p><span class="list"></span>SQL / ORM</p>
+                <span class="porcent">88%</span>
+            </div>
+            <div class="bar">
+                <div id="db-bar" class="progress-bar04"></div>
+            </div>
+        </div>
+
+        <div class="skillsClass">
+            <div class="info">
+                <p><span class="list"></span>Python3</p>
+                <span class="porcent">A tope !</span>
+            </div>
+            <div class="bar">
+                <div id="py-bar" class="progress-bar05"></div>
+            </div>
+        </div>
+        
+    </div> -->
+
+    <!--    PORTFOLIO   SECTION    -->
+    <section id="portfolio">
+        <h3 class="title-section">MY PROJECTS</h3>
+        <div class="row">
+            
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project01.png" alt="project01">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>User Login</p>
+                </div>
+            </div>
+                        
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project02.png" alt="project02">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>ToDoList</p>
+                </div>
+            </div>
+                        
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project03.png" alt="project03">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>cloned Instagram</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project01.png" alt="project01">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>User Login</p>
+                </div>
+            </div>
+                        
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project02.png" alt="project02">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>ToDoList</p>
+                </div>
+            </div>
+                        
+            <div class="project">
+                <div class="overlay"></div>
+                <img src="img/project03.png" alt="project03">
+                <div class="info">
+                    <h4>Project Description</h4>
+                    <p>cloned Instagram</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!--    CONTACT     SECTION-->
+    <section id="contact">
+        <h3 class="title-section">Let's contact</h3>
+        <div class="container-form">
+            <form action="">
+                <div class="row half">
+                    <input type="text" placeholder="name  surname" class="input-half">
+                    <input type="text" placeholder="email" class="input-half">
+                </div>
+                <div class="row">
+                    <input type="text" placeholder="submit..." class="input-full">
+                </div>
+                <div class="row">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="SEND" class="btn-send">
+
+            </form>
+        </div>
+    </section>
+
+    <!--    FOOTER     SECTION-->
+    <footer>
+        
+        <!--  ICONS SOCIAL NET  -->
+        <div class="socialnet">            
+            <a href="https://github.com/Gimena-Riveros/"><i class="fa-brands fa-github"></i></a>
+            <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p> <script type="text/javascript">
+
+            copyright=new Date();
+            
+            update=copyright.getFullYear();document.write("© " + update + " " + "~ created by ");</script><a href="#">SolutionMaker</a></p>
+    </footer>
+    <!--    <a href="#" class="heart"></a>  -->
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
