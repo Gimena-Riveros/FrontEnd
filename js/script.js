@@ -1,3 +1,29 @@
+// function to edit skills text: editTextSkils AND myFunctionEditSkills
+function editTextSkills() {
+    let textSkills = document.getElementById("text-skills").innerText;
+    
+    document.getElementById("edit-skills").style.display="block";
+
+    console.log(textSkills);
+
+}
+function logMessage(myMessage) {
+    console.log(myMessage + "<br>");
+}
+
+function myFunctionEditSkills(value) {
+    document.getElementById("text-skills").innerText=value;
+    //if press enter so save
+    let textTask = document.getElementById("edit-skills");
+    textTask.addEventListener('keyup', (e) => {
+        logMessage('Key "${e.key}" released [event: keyup]');
+        if(e.key == "Enter") {
+            document.getElementById("edit-skills").style.display="none"
+        }
+    });
+}
+//Basta eXperiencia en el armado de estructura de paginas web : ) 
+
 // function style selection option and out before selection
 function selection(link) {
     var options = document.querySelectorAll('#links a');

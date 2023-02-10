@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -11,66 +12,62 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <script src="js/theme.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="css/style.css">
+    <!--  fonts -->
+    <script src="https://kit.fontawesome.com/75770889d9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
     <title>GR Full Stack</title>
 </head>
 <body>
-    
-    <!--  INTRO   SECTION 
-    <div class="intro">
-        <img src="img/owl-colors.png" alt="logo-black">
-        <h1 class="logo">
-            <span class="logo-parts">G</span>
-            <span class="logo-parts">I</span>
-            <span class="logo-parts">M</span>
-            <span class="logo-parts">E</span>
-            <span class="logo-parts">C</span>
-            <span class="logo-parts">O</span>
-            <span class="logo-parts">D</span>
-            <span class="logo-parts">E</span>
-        </h1>
-        <p>the solution maker</p>
-    </div>
- -->
     <!--  INITIAL   SECTION  -->
     <section id="init">
-        <div class="container">
-            <header>
-                <div class="container-header">
-                    <h1><a href="#init" class="selection" onclick="selection(this)"> &ltGR&gt </a></h1>
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <!--<li><a href="#init" class="selection" onclick="selection(this)">START</a></li>-->
-                            <li><a href="#aboutme" onclick="selection(this)">ABOUT</a></li>
-                            <li><a href="#container-experience" onclick="selection(this)">E<span>X</span>PERIENCE</a></li>
-                            <li><a href="#portfolio" onclick="selection(this)">PORTFOLIO</a></li>
-                            <li><a href="#contact" onclick="selection(this)">CONTACT</a></li>
-                        </ul>
-                    </nav>
 
-                    <!--  ICONS RESPONSIVE MENU  -->
-                    <div id="icon-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
+        <header>
+            <div class="container-header">
+                <h1><a href="#init" class="selection" onclick="selection(this)"> &ltGR&gt </a></h1>
+                <nav id="nav" class="">
+                    <ul id="links">
+                        <!--<li><a href="#init" class="selection" onclick="selection(this)">START</a></li>-->
+                        <li><a href="#aboutme" onclick="selection(this)">ABOUT</a></li>
+                        <li><a href="#skills" onclick="selection(this)">SKILLS</a></li>
+                        <li><a href="#container-experience" onclick="selection(this)">E<span>X</span>PERIENCE</a></li>
+                        <li><a href="#portfolio" onclick="selection(this)">PORTFOLIO</a></li>
+                        <li><a href="#contact" onclick="selection(this)">CONTACT</a></li>
+                    </ul>
+                </nav>
 
-                    <!--  ICONS SOCIAL NET  -->
-                    <div class="socialnet">
-                        <a href="https://github.com/Gimena-Riveros/"><i class="fa-brands fa-github"></i></a>
-                        <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>   
-                    <!--  THEME  -->
-                    <label class="switch">
-                        <input type="checkbox" id="slider" checked>
-                        <span class="slider"></span>
-                        <!--
-                            <i class="fa-light fa-moon"></i>
-                            <i class="fa-regular fa-sun"></i>
-                        -->
-                    </label>             
+                <!--  ICONS RESPONSIVE MENU  -->
+                <div id="icon-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-                
-            </header>
-            <div class="presentation">
+
+                <!--  ICONS SOCIAL NET  -->
+                <div class="socialnet">
+                    <a href="https://github.com/Gimena-Riveros/"><i class="fa-brands fa-github"></i></a>
+                    <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- Button trigger modal on navbar -->
+                    <button type="button" class="button-signin" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> 
+                        <i class="fa-solid fa-user-astronaut fa-xl"></i>
+                        <!--    <i class="fa-regular fa-user-pen"></i>
+                            <i class="fa-solid fa-code"></i>
+                        -->
+                    </button>
+
+                </div> 
+                <!--  THEME  -->
+                <label class="switch">
+                    <input type="checkbox" id="slider" checked>
+                    <span class="slider"></span>
+                    <!--
+                        <i class="fa-light fa-moon"></i>
+                        <i class="fa-regular fa-sun"></i>
+                    -->
+                </label>                              
+            </div> 
+        </header>
+        <div class="presentation">
                 <!--  <p class="welcome">Welcome</p> -->
                 <div><img src="img/PhotoSlack.jpg" alt=""></div>
                 <h5>Hello! I'm <span>Gimena Riveros</span>,</h5>
@@ -81,8 +78,46 @@
                     I'll make your product scale to the &infin; infinity<br>
                     through the web -->
                 <a href="#contact">Let's work together</a>
+        </div>
+        <!--  POPUP     MODAL   LOGIN   -->
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Sign in</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <form action="">
+                            <label for="" class="fas fa-user form-label required">
+                                <i class='bx bx-user-circle'></i> Email
+                            </label>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="email@info.com" required/>
+                            </div>              
+            
+                            <label for="" class="fas fa-key form-label required">
+                                <i class='bx bxs-key'></i> Password
+                            </label>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" placeholder="password" required/>
+                            </div>
+            
+                            <div class="modal-forget">
+                                <label for="">Forgot your password?</label>
+                            </div>
+                            
+                        </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="submit" class="btn btn-submit">SUBMIT</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> CLOSE </button>            
+                        </div>
+                </div>
             </div>
         </div>
+        <!--  end-POPUP   LOGIN   -->       
     </section>
 
     <!--   ABOUT   ME   SECTION  -->
@@ -109,36 +144,51 @@
                 I enjoy music, sharing with friends a delicious cup of coffee and <br>
                 long conversations about . . . 
             </p>
-            <label><a href="pdf-cv/Gime-Riveros.pdf" target="_blank" rel="noopener noreferrer" download="Riveros-CV">Download CV</a></label>
+            <label>
+                <a href="pdf-cv/Gime-Riveros.pdf" target="_blank" rel="noopener noreferrer" download="Riveros-CV">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                </a>
+            </label>
         </div>
     </section>
 
     <!--   SKILLS     SECTION    -->
-    <section id="services">
+    <section id="skills">
         <h3 class="title-section"> MY SKILLS</h3>
-         
+        <!--   add edit button   -->
+        <div class="btn edit" onclick="editTextSkills()">
+            <a href="#skills" class="btn-right">
+                <i class="fa fa-pen"></i>
+            </a>
+        </div>
+        <!--   add edit button   -->
         <div class="row">
-            <div class="serviceClass">
+            <div class="skillsClass">
                 <span class="icon">
                     <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="HTML5"></span>
                 <h4>HTML 5</h4>
                 <hr>
-                <ul class="services-tag">
+                <ul class="skills-tag">
                     <li>Web</li>
                     <li>Graphic</li>
                     <li>SEO</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus <br>
+                <!--   add edit button   -->
+                <p id="text-skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusamus <br>
                     veniam voluptate minus
                 </p>
+                <div>
+                    <input id="edit-skills" type="text" oninput="myFunctionEditSkills(this.value)" style="display: none;">
+                </div>
+                <!--   add edit button   -->
             </div>
 
-            <div class="serviceClass">
+            <div class="skillsClass">
                 <span class="icon">
                     <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="CSS"></span>
                 <h4>CSS</h4>
                 <hr>
-                <ul class="services-tag">
+                <ul class="skills-tag">
                     <li>Web</li>
                     <li>Graphic</li>
                     <li>SEO</li>
@@ -148,12 +198,12 @@
                 </p>
             </div>
 
-            <div class="serviceClass">
+            <div class="skillsClass">
                 <span class="icon">
                     <img src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="JavaScript"></span>
                 <h4>JS</h4>
                 <hr>
-                <ul class="services-tag">
+                <ul class="skills-tag">
                     <li>Web</li>
                     <li>Graphic</li>
                     <li>SEO</li>
@@ -166,12 +216,12 @@
         </div>
 
         <div class="row">
-            <div class="serviceClass">
+            <div class="skillsClass">
                 <span class="icon">
                     <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="PostgreSQL"></span>
                 <h4>PostgreSQL</h4>
                 <hr>
-                <ul class="services-tag">
+                <ul class="skills-tag">
                     <li>Web</li>
                     <li>Graphic</li>
                     <li>SEO</li>
@@ -181,12 +231,12 @@
                 </p>
             </div>
 
-            <div class="serviceClass">
+            <div class="skillsClass">
                 <span class="icon">
                     <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="Python3"></i></span>
                 <h4>Python 3</h4>
                 <hr>
-                <ul class="services-tag">
+                <ul class="skills-tag">
                     <li>Web</li>
                     <li>Graphic</li>
                     <li>SEO</li>
@@ -196,12 +246,12 @@
                 </p>
             </div>
 
-            <div class="serviceClass">
+            <div class="skillsClass">
                 <span class="icon">
                     <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-icon.svg" alt="Django"></span>
                 <h4>Django</h4>
                 <hr>
-                <ul class="services-tag">
+                <ul class="skills-tag">
                     <li>Web</li>
                     <li>Graphic</li>
                     <li>SEO</li>
@@ -214,12 +264,12 @@
         </div>
         
         <div class="row">
-            <div class="serviceClass">
+            <div class="skillsClass">
                 <span class="icon">
                     <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="NodeJS"></span>
                 <h4>Node JS</h4>
                 <hr>
-                <ul class="services-tag">
+                <ul class="skills-tag">
                     <li>Web</li>
                     <li>Graphic</li>
                     <li>SEO</li>
@@ -229,12 +279,12 @@
                 </p>
             </div>
 
-            <div class="serviceClass">
+            <div class="skillsClass">
                 <span class="icon">
                     <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg" alt="Bootstrap"></span>
                 <h4>Bootstrap</h4>
                 <hr>
-                <ul class="services-tag">
+                <ul class="skills-tag">
                     <li>Web</li>
                     <li>Graphic</li>
                     <li>SEO</li>
@@ -244,12 +294,12 @@
                 </p>
             </div>
 
-            <div class="serviceClass">
+            <div class="skillsClass">
                 <span class="icon">
                     <img src="https://www.vectorlogo.zone/logos/angular/angular-icon.svg" alt="Angular"></span>
                 <h4>Angular</h4>
                 <hr>
-                <ul class="services-tag">
+                <ul class="skills-tag">
                     <li>Web</li>
                     <li>Graphic</li>
                     <li>SEO</li>
@@ -262,12 +312,12 @@
         </div>
 
         <div class="row">
-            <div class="serviceClass">
+            <div class="skillsClass">
                 <span class="icon">
                     <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="GIT"></span>
                 <h4>GIT</h4>
                 <hr>
-                <ul class="services-tag">
+                <ul class="skills-tag">
                     <li>Web</li>
                     <li>Graphic</li>
                     <li>SEO</li>
@@ -277,12 +327,12 @@
                 </p>
             </div>
 
-            <div class="serviceClass">
+            <div class="skillsClass">
                 <span class="icon">
                     <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="GitHub"></span>
                 <h4>GitHub</h4>
                 <hr>
-                <ul class="services-tag">
+                <ul class="skills-tag">
                     <li>Web</li>
                     <li>Graphic</li>
                     <li>SEO</li>

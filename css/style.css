@@ -7,11 +7,15 @@
     --primary: rgba(78, 63, 240, 0.5); /* #673AB7;*/
     --background: #FFF5EE;
     --background-two: #37383b;
+    --background-second: #37383b;
     --text: #010718;
+    --text-nav: #010718;
+    --frame: #939ec0; /*  #37383b;  #B0C4DE;    */
     --about-photo: plum;
 
     --body-color: #E4E9F7;
     --nav-color: rgba(199, 16, 235, 0.5);     /*    #673AB7  #4070F4    */
+    --nav-inverse: #7B68EE;
     --side-nav: #010718;
     --body-h1: #010718;
 }
@@ -20,6 +24,8 @@
     --background: #37383b;
     --background-two: #B0C4DE;
     --text: #F5F5F5;            /*  #FFFAFA   #EDE7F6  #CCC  #FFF    */
+    --text-nav: #E4E9F7;
+    --frame: #939ec0; /*  #37383b;  #B0C4DE;    */
     --about-photo: rgba(137, 43, 226, 0.5);
 
     --body-color: #18191A;
@@ -46,7 +52,7 @@ html{
     height: 100vh;
 }
 
-#init .container header{
+#init header{
     background: var(--nav-color);  /* rgba(199, 16, 235, 0.5); */
     position: fixed;
     width: 100%;
@@ -54,7 +60,7 @@ html{
     top: 0;
 }
 
-#init .container header .container-header{
+#init header .container-header{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -66,21 +72,22 @@ html{
     transition: 0.5s;
 }
 
-#init .container header .container-header h1 {
+#init header .container-header h1 {
     text-align: center;
     color: purple; /* #FF5080 rgb(148, 57, 232) */
 }
-.container header .container-header h1 a {
+header .container-header h1 a {
     text-decoration: none;
 }
 
-#init .container header .container-header nav ul{
+#init header .container-header nav ul{
     list-style: none;
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
-#init .container header .container-header nav ul li a{
+#init header .container-header nav ul li a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: #FFF;
@@ -89,112 +96,109 @@ html{
     transition: .5s;
 }
 
-#init .container header .container-header nav ul a:hover{
+#init header .container-header nav ul a:hover{
     color: purple; /* #FF5080; */
 }
-
-#init .container header .container-header .socialnet a {
+#init header .container-header .socialnet {
+    margin-left: 130px;
+}
+#init header .container-header .socialnet a {
     font-size: 1.6rem;
     text-decoration: none;
     color: #FFF;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 15px;
     transition: .5s;
 }
-
-#init .container header .container-header .socialnet a:hover {
-    color: blueviolet;
+i.fa-brands.fa-linkedin:hover {
+    color: rgb(1, 123, 236);
 }
-#init .container header .container-header .selection {
+i.fa-brands.fa-instagram:hover {
     color: #FF5080;
 }
-
-#init .container .presentation{
-    max-width: 1100px;
-    height: 100vh;
-    margin: auto;
-    color: #FFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+i.fa-brands.fa-github:hover {
+    color: rgb(46, 249, 114);
 }
-
-#init .container .presentation .welcome {
-    font-size: 16px;
-    font-family: "Game of Thrones";
-    margin-top: 10px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+#init header .container-header .selection {
+    color: #FF5080;
 }
-#init .container .presentation img {
-    width: 230px;
-    height: 230px;
-    border: 2px solid #F2F2F2;
-    border-radius: 50%;
-    position: center;
-    margin-top: 150px;
-    box-shadow: 25px 25px 25px rgba(188, 56, 221, 0.2);
-}
-#init .container .presentation h5 {
-    font-size: 35px;
-    margin-bottom: 10px;
-    text-align: center;
-    letter-spacing: .1rem;
-    word-spacing: .2em;
-}
-
-#init .container .presentation h5 span {
-    font-size: 70px;
-    font-family: 'Poppins', sans-serif;
-    color: purple; /* #FF5080 */
-}
-
-#init .container .presentation .description {
-    max-width: 700px;
-    margin: 15px auto;
-    font-size: 12px;
-    font-family: "Game of Thrones";
-    text-align: center;
-    letter-spacing: .1em;
-    word-spacing: .2em;
-    color: snow;
-}
-.container .presentation p {
-    color: #FFF;
-    font-weight: bolder;
-    font-size: 20px;
-    letter-spacing: 0.2em;
-}
-#init .container .presentation a {
+/*   SECTION    SIGN IN MODAL    *******************************************************/
+#init .button-signin {
+    background: var(--nav-inverse);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
     text-decoration: none;
-    display: inline-block;
-    margin: 25px;
-    padding: 20px 25px;
-    border: 2px solid #FFF;
-    border-radius: 50px;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 15px;
-    text-transform: uppercase;
-    transition: .5s;
+    color: var(--frame);
+    border-radius: 10px;
+    background: var(--background-second);
+    transition: 1s;
 }
-
-#init .container .presentation a:hover {
-    background-color: purple;
+#init .button-signin:hover {
+    box-shadow: 8px 8px 12px var(--frame);
+    color: var(--text-nav);
 }
-
-#icon-nav {
-    color: #FFF;
-    display: none;
+.modal-title {
+    margin-left: 170px;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
 }
-.header-wrap
-{
-	display: none !important;
+.modal-body {
+    padding-left: 120px;
+    padding-right: 120px;
 }
-/*  THEME   DARK  LABEL   */
-/* Estilos del switch */
+button i {
+    font-size: 18px;
+    font-weight: 700;
+}
+/* MODAL   SIGN IN     FORM    */
+#staticBackdrop {
+    padding-top: 50px;
+    padding-left: 790px;
+}
+.modal-header {
+    background: var(--nav-inverse);
+    color: var(--text-nav);
+}
+.modal-body {
+    background: var(--frame);
+}
+.modal-body label {
+    color: var(--text-nav);
+}
+.modal-body i {
+    color: var(--nav-inverse);
+    font-size: 22px;
+    font-weight: 600;
+}
+.modal-footer {
+    background: var(--frame);
+}
+.modal-footer .btn-submit {
+    background: var(--nav-inverse);
+}
+.required::after {
+    content: " * ";
+    color: crimson;
+}
+input [type="text"],
+input [type="password"] {
+    width: 240px;
+    height: 30px;
+    outline: none;
+    border: 0.5px solid var(--background-second);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+/*      end-MODAL   SIGN IN     FORM    */
+/*  THEME   DARK  LABEL  -  Estilos del switch */
 .switch {
     position: relative;
     display: inline-block;
@@ -244,7 +248,91 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 /**/
+/*   SECTION    ABOUT   ME    *******************************************************/
+#init .presentation{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+#init .presentation .welcome {
+    font-size: 16px;
+    font-family: "Game of Thrones";
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#init .presentation img {
+    width: 230px;
+    height: 230px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    position: center;
+    margin-top: 150px;
+    box-shadow: 25px 25px 25px rgba(188, 56, 221, 0.2);
+}
+#init .presentation h5 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: .1rem;
+    word-spacing: .2em;
+}
+
+#init .presentation h5 span {
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    color: purple; /* #FF5080 */
+}
+
+#init .presentation .description {
+    max-width: 700px;
+    margin: 15px auto;
+    font-size: 12px;
+    font-family: "Game of Thrones";
+    text-align: center;
+    letter-spacing: .1em;
+    word-spacing: .2em;
+    color: snow;
+}
+.presentation p {
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+}
+#init .presentation a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #FFF;
+    border-radius: 50px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#init .presentation a:hover {
+    background-color: purple;
+}
+
+#icon-nav {
+    color: #FFF;
+    display: none;
+}
+.header-wrap
+{
+	display: none !important;
+}
 /*   SECTION    ABOUT   ME    *******************************************************/
 #aboutme {
     margin: auto;
@@ -293,7 +381,7 @@ input:checked + .slider:before {
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 
 #aboutme .aboutme p {
@@ -319,20 +407,21 @@ input:checked + .slider:before {
 }
 .aboutme p a:hover {
     color: var(--primary);
+    font-weight: bold;
 }
 .aboutme label a:hover {
     background-color: blueviolet; /* #FF5080;*/
     color: whitesmoke;
     border: 2px solid whitesmoke;
 }
-/*   SECTION    SERVICES    *******************************************************/
-#services {
+/*   SECTION    SKILLS    *******************************************************/
+#skills {
     padding: 100px 15px;
     text-align: center;
     background-color: #F3F3F3;
 }
 
-#services .title-section {
+#skills .title-section {
     font-size: 22px;
     text-transform: uppercase;
     color: #111135;
@@ -341,14 +430,14 @@ input:checked + .slider:before {
     text-decoration-thickness: 5px;
 }
 
-#services .row {
+#skills .row {
     display: inline-flex;
     justify-content: space-between;
     max-width: 1100px;
     margin: 30px auto;
 }
 
-#services .row .serviceClass {
+#skills .row .skillsClass {
     max-width: 300px;
     background-color: #FFF;
     padding: 30px;
@@ -357,16 +446,16 @@ input:checked + .slider:before {
     transition: .5s;
 }
 
-#services .row .serviceClass:hover {
+#skills .row .skillsClass:hover {
     box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8A8A8A;
 }
 
-#services .row .serviceClass h4 {
+#skills .row .skillsClass h4 {
     font-size: 22px;
     margin-bottom: 25px;
 }
 
-#services .row .serviceClass .icon {
+#skills .row .skillsClass .icon {
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -376,25 +465,25 @@ input:checked + .slider:before {
     margin-bottom: 25px;
 }
 
-#services .row .serviceClass img {
+#skills .row .skillsClass img {
     max-width: 40px;
 }
 
-#services .row .serviceClass hr {
+#skills .row .skillsClass hr {
     width: 30%;
     margin: auto;
     color: #000;
     margin-bottom: 25px;
 }
 
-#services .row .serviceClass ul {
+#skills .row .skillsClass ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
-#services .row .serviceClass p {
+#skills .row .skillsClass p {
     font-size: 14px;
     line-height: 22px;
 }
@@ -834,13 +923,13 @@ footer .heart::before {
         font-size: 25px;
         text-align: center;
     }
-    #services {
+    #skills {
         padding: 50px 15px;
     }
-    #services .row {
+    #skills .row {
         display: block;
     }
-    #services .row .serviceClass {
+    #skills .row .skillsClass {
         margin: 10px auto;
     }
 
